@@ -1,0 +1,2813 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="">
+
+<head>
+    <meta charset="utf-8">
+
+    <script type="text/javascript">
+        window._currentDevice = 'desktop';
+        window.Parameters = window.Parameters || {
+            HomeUrl: 'https://www.gozen.life/',
+            AccountUUID: '170314398020415dab5ab1dc7502ab76',
+            SystemID: 'US_DIRECT_PRODUCTION',
+            SiteAlias: 'ec518403',
+            SiteType: atob('RFVEQU9ORQ=='),
+            PublicationDate: 'Mon Feb 17 07:41:50 UTC 2025',
+            ExternalUid: null,
+            IsSiteMultilingual: false,
+            InitialPostAlias: '',
+            InitialPostPageUuid: '',
+            InitialDynamicItem: '',
+            DynamicPageInfo: {
+                isDynamicPage: false,
+                base64JsonRowData: 'null',
+            },
+            InitialPageAlias: 'resources/emf',
+            InitialPageUuid: 'a5a0b867024649139050c591b015bb27',
+            InitialPageId: '34607737',
+            InitialEncodedPageAlias: 'cmVzb3VyY2VzL2VtZg==',
+            InitialHeaderUuid: 'd0a989012cd248b6b9ddf3cf9602d73d',
+            CurrentPageUrl: '',
+            IsCurrentHomePage: false,
+            AllowAjax: false,
+            AfterAjaxCommand: null,
+            HomeLinkText: 'Back To Home',
+            UseGalleryModule: false,
+            CurrentThemeName: 'Layout Theme',
+            ThemeVersion: '51960',
+            DefaultPageAlias: '',
+            RemoveDID: true,
+            WidgetStyleID: null,
+            IsHeaderFixed: false,
+            IsHeaderSkinny: false,
+            IsBfs: true,
+            StorePageAlias: 'null',
+            StorePagesUrls: 'e30=',
+            IsNewStore: 'false',
+            StorePath: '',
+            StoreId: 'null',
+            StoreVersion: 0,
+            StoreBaseUrl: '',
+            StoreCleanUrl: true,
+            StoreDisableScrolling: true,
+            IsStoreSuspended: false,
+            HasCustomDomain: true,
+            SimpleSite: false,
+            showCookieNotification: false,
+            cookiesNotificationMarkup: 'null',
+            translatedPageUrl: '',
+            isFastMigrationSite: false,
+            sidebarPosition: 'NA',
+            currentLanguage: 'en',
+            currentLocale: 'en',
+            NavItems: '{}',
+            errors: {
+                general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+                password: 'Incorrect name/password combination',
+                tryAgain: 'Try again'
+            },
+            NavigationAreaParams: {
+                ShowBackToHomeOnInnerPages: true,
+                NavbarSize: -1,
+                NavbarLiveHomePage: 'https://www.gozen.life/',
+                BlockContainerSelector: '.dmBody',
+                NavbarSelector: '#dmNav:has(a)',
+                SubNavbarSelector: '#subnav_main'
+            },
+            hasCustomCode: false,
+            planID: '7',
+            customTemplateId: 'null',
+            siteTemplateId: 'null',
+            productId: 'DM_DIRECT',
+            disableTracking: false,
+            pageType: 'FROM_SCRATCH',
+            isRuntimeServer: true,
+            isInEditor: false,
+            hasNativeStore: false,
+            defaultLang: 'en',
+            hamburgerMigration: null,
+            isFlexSite: false
+        };
+
+        window.Parameters.LayoutID = {};
+        window.Parameters.LayoutID[window._currentDevice] = 6;
+        window.Parameters.LayoutVariationID = {};
+        window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Injecting site-wide to the head -->
+
+
+
+
+    <!-- End Injecting site-wide to the head -->
+
+    <!-- Inject secured cdn script -->
+
+
+    <!-- ========= Meta Tags ========= -->
+    <script>
+        try {
+            if (
+                navigator.serviceWorker &&
+                navigator.serviceWorker.getRegistrations &&
+                location.protocol === 'https:'
+            ) {
+                // remove all service workers
+                navigator.serviceWorker
+                    .getRegistrations()
+                    .then(function (registrations) {
+                        if (registrations && registrations.length) {
+                            console.log('unregistering service workers');
+                            registrations.forEach(function (registration) {
+                                registration.unregister();
+                            });
+                        }
+                    });
+                // clear caches
+                if (caches) {
+                    caches.keys().then(function (keyList) {
+                        if (keyList && keyList.length) {
+                            console.log('deleting caches');
+                            keyList.forEach(function (key) {
+                                if (key && key.indexOf('druntime') === 0) {
+                                    caches.delete(key);
+                                }
+                            });
+                        }
+                    });
+                }
+            }
+        } catch (err) {
+            // not a secured location
+        }
+    </script>
+
+
+
+    <link rel="canonical" href="https://www.gozen.life/resources/emf">
+
+    <meta id="view" name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!--Add favorites icons-->
+
+    <link rel="apple-touch-icon"
+        href="https://irp.cdn-website.com/ec518403/dms3rep/multi/Zen+Life+Logo+2023+Green+Dude.png" />
+
+    <link rel="icon" type="image/x-icon"
+        href="https://irp.cdn-website.com/ec518403/site_favicon_16_1705003199491.ico" />
+
+    <!-- End favorite icons -->
+    <link rel="preconnect" href="https://lirp.cdn-website.com/" />
+
+
+
+    <!-- render the required CSS and JS in the head section -->
+    <script id='d-js-dmapi'>
+        window.SystemID = 'US_DIRECT_PRODUCTION';
+
+        if (!window.dmAPI) {
+            window.dmAPI = {
+                registerExternalRuntimeComponent: function () { },
+                getCurrentDeviceType: function () {
+                    return window._currentDevice;
+                },
+                runOnReady: (ns, fn) => {
+                    const safeFn = dmAPI.toSafeFn(fn);
+                    ns = ns || 'global_' + Math.random().toString(36).slice(2, 11);
+                    const eventName = 'afterAjax.' + ns;
+
+                    if (document.readyState === 'complete') {
+                        $.DM.events.off(eventName).on(eventName, safeFn);
+                        setTimeout(function () {
+                            safeFn({
+                                isAjax: false,
+                            });
+                        }, 0);
+                    } else {
+                        window ? .waitForDeferred ? .('dmAjax', () => {
+                            $.DM.events.off(eventName).on(eventName, safeFn);
+                            safeFn({
+                                isAjax: false,
+                            });
+                        });
+                    }
+                },
+                toSafeFn: (fn) => {
+                    if (fn ? .safe) {
+                        return fn;
+                    }
+                    const safeFn = function (...args) {
+                        try {
+                            return fn ? .apply(null, args);
+                        } catch (e) {
+                            console.log('function failed ' + e.message);
+                        }
+                    };
+                    safeFn.safe = true;
+                    return safeFn;
+                }
+            };
+        }
+
+        if (!window.requestIdleCallback) {
+            window.requestIdleCallback = function (fn) {
+                setTimeout(fn, 0);
+            }
+        }
+    </script>
+
+    <!-- loadCSS function header.jsp-->
+
+
+
+
+
+
+    <script id="d-js-load-css">
+        /**
+         * There are a few <link> tags with CSS resource in them that are preloaded in the page
+         * in each of those there is a "onload" handler which invokes the loadCSS callback
+         * defined here.
+         * We are monitoring 3 main CSS files - the runtime, the global and the page.
+         * When each load we check to see if we can append them all in a batch. If threre
+         * is no page css (which may happen on inner pages) then we do not wait for it
+         */
+        (function () {
+            let cssLinks = {};
+
+            function loadCssLink(link) {
+                link.onload = null;
+                link.rel = "stylesheet";
+                link.type = "text/css";
+            }
+
+            function checkCss() {
+                const pageCssLink = document.querySelector("[id*='CssLink']");
+                const widgetCssLink = document.querySelector("[id*='widgetCSS']");
+
+                if (cssLinks && cssLinks.runtime && cssLinks.global && (!pageCssLink || cssLinks.page) && (!widgetCssLink || cssLinks.widget)) {
+                    const storedRuntimeCssLink = cssLinks.runtime;
+                    const storedPageCssLink = cssLinks.page;
+                    const storedGlobalCssLink = cssLinks.global;
+                    const storedWidgetCssLink = cssLinks.widget;
+
+                    storedGlobalCssLink.disabled = true;
+                    loadCssLink(storedGlobalCssLink);
+
+                    if (storedPageCssLink) {
+                        storedPageCssLink.disabled = true;
+                        loadCssLink(storedPageCssLink);
+                    }
+
+                    if (storedWidgetCssLink) {
+                        storedWidgetCssLink.disabled = true;
+                        loadCssLink(storedWidgetCssLink);
+                    }
+
+                    storedRuntimeCssLink.disabled = true;
+                    loadCssLink(storedRuntimeCssLink);
+
+                    requestAnimationFrame(() => {
+                        setTimeout(() => {
+                            storedRuntimeCssLink.disabled = false;
+                            storedGlobalCssLink.disabled = false;
+                            if (storedPageCssLink) {
+                                storedPageCssLink.disabled = false;
+                            }
+                            if (storedWidgetCssLink) {
+                                storedWidgetCssLink.disabled = false;
+                            }
+                            // (SUP-4179) Clear the accumulated cssLinks only when we're
+                            // sure that the document has finished loading and the document 
+                            // has been parsed.
+                            if (document.readyState === 'interactive') {
+                                cssLinks = null;
+                            }
+                        }, 0);
+                    });
+                }
+            }
+
+
+            function loadCSS(link) {
+                try {
+                    var urlParams = new URLSearchParams(window.location.search);
+                    var noCSS = !!urlParams.get("nocss");
+                    var cssTimeout = urlParams.get("cssTimeout") || 0;
+
+                    if (noCSS) {
+                        return;
+                    }
+                    if (link.href && link.href.includes("d-css-runtime")) {
+                        cssLinks.runtime = link;
+                        checkCss();
+                    } else if (link.id === "siteGlobalCss") {
+                        cssLinks.global = link;
+                        checkCss();
+                    } else if (link.id && link.id.includes("CssLink")) {
+                        cssLinks.page = link;
+                        checkCss();
+                    } else if (link.id && link.id.includes("widgetCSS")) {
+                        cssLinks.widget = link;
+                        checkCss();
+                    } else {
+                        requestIdleCallback(function () {
+                            window.setTimeout(function () {
+                                loadCssLink(link);
+                            }, parseInt(cssTimeout, 10));
+                        });
+                    }
+                } catch (e) {
+                    throw e
+                }
+            }
+            window.loadCSS = window.loadCSS || loadCSS;
+        })();
+    </script>
+
+
+
+    <script data-role="deferred-init" type="text/javascript">
+        /* usage: window.getDeferred(<deferred name>).resolve() or window.getDeferred(<deferred name>).promise.then(...)*/
+        function Def() {
+            this.promise = new Promise((function (a, b) {
+                this.resolve = a, this.reject = b
+            }).bind(this))
+        }
+
+        const defs = {};
+        window.getDeferred = function (a) {
+            return null == defs[a] && (defs[a] = new Def), defs[a]
+        }
+        window.waitForDeferred = function (b, a, c) {
+            let d = window ? .getDeferred ? .(b);
+            d
+                ?
+                d.promise.then(a) :
+                c && ["complete", "interactive"].includes(document.readyState) ?
+                    setTimeout(a, 1) :
+                    c ?
+                        document.addEventListener("DOMContentLoaded", a) :
+                        console.error(`Deferred  does not exist`);
+        };
+    </script>
+    <style id="forceCssIncludes">
+        /* This file is auto-generated from a `scss` file with the same name */
+
+        .videobgwrapper {
+            overflow: hidden;
+            position: absolute;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            border-radius: inherit
+        }
+
+        .videobgframe {
+            position: absolute;
+            width: 101%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            object-fit: fill
+        }
+
+        #dm video.videobgframe {
+            margin: 0
+        }
+
+        @media (max-width:767px) {
+            .dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done) {
+                min-height: 80vh
+            }
+        }
+
+        @media (min-width:1025px) {
+            .dmRoot .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done) {
+                min-height: 45vh
+            }
+        }
+
+        @media (min-width:768px) and (max-width:1024px) {
+            .responsiveTablet .dmPhotoGallery.newPhotoGallery:not(.photo-gallery-done) {
+                min-height: 45vh
+            }
+        }
+
+        #dm [data-show-on-page-only] {
+            display: none !important
+        }
+
+        #dmRoot div.stickyHeaderFix div.site_content {
+            margin-top: 0 !important
+        }
+
+        #dmRoot div.stickyHeaderFix div.hamburger-header-container {
+            position: relative
+        }
+
+        body.fix-mobile-scrolling {
+            overflow-x: hidden !important;
+        }
+
+        @media (max-width: 768px) {
+            *#dm *.dmBody div.u_1843301351 {
+                padding-right: 23rem !important;
+            }
+
+            @media (max-width: 768px) {
+                .dmRespColsWrapper {
+                    display: flex !important;
+                    flex-direction: column-reverse !important;
+                    margin-left: -2rem !important;
+                }
+
+                .last-section .dmRespColsWrapper {
+                    margin-left: -19px !important;
+                    margin-top: -3rem !important;
+                    flex-direction: column !important;
+                }
+
+                .contact-form .dmRespColsWrapper {
+                    display: flex !important;
+                    flex-direction: column !important;
+                    margin-top: -12rem !important;
+                    margin-left: -24px !important;
+                }
+
+                *#dm *.dmBody div.u_1239467112 {
+                    width: 50% !important;
+                    margin-left: 2rem !important;
+                }
+                *#dm *.dmBody div.u_1419999847{
+                    margin-left: -1rem !important;
+                    margin-top: -1rem !important;
+                    margin-bottom: 3rem !important;
+                    }
+
+            }
+    </style>
+    <style id="cssVariables" type="text/css">
+    </style>
+
+    <!-- Google Fonts Include -->
+    <!-- loadCSS function fonts.jsp-->
+
+
+
+    <link type="text/css" rel="stylesheet"
+        href="https://irp.cdn-website.com/fonts/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;subset=latin-ext&amp;display=swap" />
+
+
+
+
+
+    <!-- RT CSS Include d-css-runtime-desktop-one-package-structured-global-->
+    <link rel="stylesheet" type="text/css"
+        href="https://static.cdn-website.com/mnlt/production/5270/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-structured-global.min.css" />
+
+    <!-- End of RT CSS Include -->
+
+    <link type="text/css" rel="stylesheet"
+        href="https://irp.cdn-website.com/WIDGET_CSS/bd2d6c1e7733a1e173d4284520dcc944.css" id="widgetCSS" />
+
+    <!-- Support `img` size attributes -->
+    <style>
+        img[width][height] {
+            height: auto;
+        }
+    </style>
+
+    <!-- Support showing sticky element on page only -->
+    <style>
+        body[data-page-alias="resources/emf"] #dm [data-show-on-page-only="resources/emf"] {
+            display: block !important;
+        }
+    </style>
+
+    <!-- This is populated in Ajax navigation -->
+    <style id="pageAdditionalWidgetsCss" type="text/css">
+    </style>
+
+
+
+
+    <!-- Site CSS -->
+    <link type="text/css" rel="stylesheet" href="https://irp.cdn-website.com/ec518403/files/ec518403_1.min.css?v=259"
+        id="siteGlobalCss" />
+
+
+
+    <style id="customWidgetStyle" type="text/css">
+    </style>
+    <style id="innerPagesStyle" type="text/css">
+    </style>
+
+
+    <style id="additionalGlobalCss" type="text/css">
+    </style>
+
+    <style id="pagestyle" type="text/css">
+        *#dm *.dmBody a.span.textonly {
+            color: rgb(255, 255, 255) !important
+        }
+
+        *#dm *.dmBody div.dmform-error {
+            font-style: normal !important
+        }
+
+        *#dm *.dmBody div.dmforminput textarea {
+            font-style: italic !important
+        }
+
+        *#dm *.dmBody div.dmforminput *.fileUploadLink {
+            font-style: italic !important
+        }
+
+        *#dm *.dmBody div.checkboxwrapper span {
+            font-style: italic !important
+        }
+
+        *#dm *.dmBody div.radiowrapper span {
+            font-style: italic !important
+        }
+
+        *#dm *.dmBody nav.u_1144820115 {
+            color: black !important
+        }
+
+        *#dm *.dmBody div.u_1843301351 {
+            background-repeat: no-repeat !important;
+            background-image: url(https://lirp.cdn-website.com/ec518403/dms3rep/multi/opt/blank_header-2880w.jpg) !important;
+            background-size: cover !important;
+            background-color: rgba(163, 178, 164, 1) !important
+        }
+
+        *#dm *.dmBody *.u_1843301351:before {
+            opacity: 0.5 !important;
+            background-color: rgb(139, 148, 140) !important
+        }
+
+        *#dm *.dmBody *.u_1843301351.before {
+            opacity: 0.5 !important;
+            background-color: rgb(139, 148, 140) !important
+        }
+
+        *#dm *.dmBody *.u_1843301351>.bgExtraLayerOverlay {
+            opacity: 0.5 !important;
+            background-color: rgb(139, 148, 140) !important
+        }
+
+        *#dm *.dmBody div.u_1843301351:before {
+            background-color: rgba(163, 178, 164, 1) !important;
+            opacity: 0.51 !important
+        }
+
+        *#dm *.dmBody div.u_1843301351.before {
+            background-color: rgba(163, 178, 164, 1) !important;
+            opacity: 0.51 !important
+        }
+
+        *#dm *.dmBody div.u_1843301351>.bgExtraLayerOverlay {
+            background-color: rgba(163, 178, 164, 1) !important;
+            opacity: 0.51 !important
+        }
+
+        *#dm *.dmBody div.u_1579174602 {
+            background-color: rgba(239, 239, 239, 1) !important
+        }
+
+        *#dm *.dmBody div.u_1383575201 {
+            background-color: rgba(239, 239, 239, 1) !important
+        }
+
+        *#dm *.dmBody div.u_1419999847 img[dm_changed] {
+            border-radius: 80px 80px 80px 80px !important
+        }
+
+        *#dm *.dmBody div.u_1419999847 img {
+            border-radius: 80px 80px 80px 80px !important
+        }
+
+        *#dm *.dmBody *.u_1419999847 {
+            width: 100% !important
+        }
+
+        *#dm *.dmBody div.u_1799660635 img[dm_changed] {
+            border-radius: 80px 80px 80px 80px !important
+        }
+
+        *#dm *.dmBody div.u_1799660635 img {
+            border-radius: 80px 80px 80px 80px !important
+        }
+
+        *#dm *.dmBody *.u_1799660635 {
+            width: 100% !important
+        }
+    </style>
+
+    <style id="pagestyleDevice" type="text/css">
+        *#dm *.d-page-1716942098 DIV.dmInner {
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            background-attachment: fixed !important;
+            background-position: 50% 50% !important
+        }
+
+        *#dm *.d-page-1716942098 DIV#dmSlideRightNavRight {
+            background-repeat: no-repeat !important;
+            background-image: none !important;
+            background-size: cover !important;
+            background-attachment: fixed !important;
+            background-position: 50% 50% !important
+        }
+
+        *#dm *.dmBody div.u_1190025270 {
+            margin-left: 0 !important;
+            padding-top: 0 !important;
+            padding-left: 50px !important;
+            padding-bottom: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            margin-right: 0 !important;
+            padding-right: 0 !important
+        }
+
+        *#dm *.dmBody div.u_1037883481 {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            padding-right: 0 !important;
+            padding-left: 0 !important
+        }
+
+        *#dm *.dmBody div.u_1644087071 {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            padding-right: 0 !important;
+            padding-left: 0 !important
+        }
+
+        *#dm *.dmBody div.u_1197620880 {
+            float: none !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: calc(100% - 0px) !important;
+            position: relative !important;
+            height: 484.905px !important;
+            padding-top: 0 !important;
+            padding-left: 0 !important;
+            padding-bottom: 0 !important;
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            max-width: 100% !important;
+            margin-top: 0 !important;
+            margin-bottom: 10px !important;
+            padding-right: 0 !important;
+            min-width: 25px !important;
+            text-align: start !important
+        }
+
+        *#dm *.dmBody div.u_1071789364 {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            padding-right: 0 !important;
+            padding-left: 0 !important
+        }
+
+        *#dm *.dmBody div.u_1599751933 {
+            float: none !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: calc(100% - 0px) !important;
+            position: relative !important;
+            height: auto !important;
+            padding-top: 2px !important;
+            padding-left: 0 !important;
+            padding-bottom: 2px !important;
+            margin-right: auto !important;
+            margin-left: auto !important;
+            max-width: 100% !important;
+            margin-top: 0 !important;
+            margin-bottom: 8px !important;
+            padding-right: 0 !important;
+            min-width: 25px !important
+        }
+
+        *#dm *.dmBody div.u_1383575201 {
+            padding-top: 80px !important;
+            padding-left: 40px !important;
+            padding-bottom: 80px !important;
+            padding-right: 40px !important;
+            width: auto !important;
+            margin-left: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            margin-right: 0 !important
+        }
+
+        *#dm *.dmBody div.u_1239467112 {
+            padding-top: 80px !important;
+            padding-left: 40px !important;
+            padding-bottom: 80px !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            margin-right: 0 !important;
+            padding-right: 40px !important;
+        }
+
+        *#dm *.dmBody div.u_1579174602 {
+            margin-left: 0 !important;
+            padding-top: 80px !important;
+            padding-left: 40px !important;
+            padding-bottom: 80px !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            margin-right: 0 !important;
+            padding-right: 40px !important;
+            width: auto !important
+        }
+
+        *#dm *.dmBody div.u_1906836891 {
+            display: block !important;
+            float: none !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: calc(100% - 0px) !important;
+            position: relative !important;
+            height: auto !important;
+            padding-top: 2px !important;
+            padding-left: 0 !important;
+            padding-bottom: 2px !important;
+            margin-right: auto !important;
+            margin-left: auto !important;
+            max-width: 100% !important;
+            margin-top: 8px !important;
+            margin-bottom: 8px !important;
+            padding-right: 0 !important;
+            min-width: 25px !important
+        }
+
+        *#dm *.dmBody div.u_1207545579 {
+            display: block !important;
+            float: none !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: calc(100% - 0px) !important;
+            position: relative !important;
+            height: auto !important;
+            padding-top: 2px !important;
+            padding-left: 0 !important;
+            padding-bottom: 2px !important;
+            max-width: 457.994px !important;
+            padding-right: 0 !important;
+            min-width: 25px !important;
+            margin-right: 142.006px !important;
+            margin-left: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 8px !important
+        }
+
+        *#dm *.dmBody div.u_1706661327 {
+            float: none !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: calc(100% - 0px) !important;
+            position: relative !important;
+            height: auto !important;
+            padding-top: 2px !important;
+            padding-left: 0 !important;
+            padding-bottom: 2px !important;
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            max-width: 100% !important;
+            margin-top: 20px !important;
+            margin-bottom: 8px !important;
+            padding-right: 0 !important;
+            min-width: 25px !important;
+            display: block !important
+        }
+
+        *#dm *.dmBody div.u_1673372259 {
+            float: none !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: calc(100% - 0px) !important;
+            position: relative !important;
+            height: auto !important;
+            padding-top: 2px !important;
+            padding-left: 0 !important;
+            padding-bottom: 2px !important;
+            max-width: 100% !important;
+            padding-right: 0 !important;
+            min-width: 25px !important;
+            display: block !important;
+            margin-right: auto !important;
+            margin-left: auto !important;
+            margin-top: 15px !important;
+            margin-bottom: 8px !important
+        }
+
+        *#dm *.dmBody div.u_1517245529 {
+            float: none !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: calc(100% - 0px) !important;
+            position: relative !important;
+            height: auto !important;
+            padding-top: 2px !important;
+            padding-left: 0 !important;
+            padding-bottom: 2px !important;
+            max-width: 100% !important;
+            padding-right: 0 !important;
+            min-width: 25px !important;
+            display: block !important;
+            margin-right: auto !important;
+            margin-left: auto !important;
+            margin-top: 15px !important;
+            margin-bottom: 8px !important
+        }
+
+        *#dm *.dmBody div.u_1248500289 {
+            float: none !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: calc(100% - 0px) !important;
+            position: relative !important;
+            height: auto !important;
+            padding-top: 2px !important;
+            padding-left: 0 !important;
+            padding-bottom: 2px !important;
+            max-width: 100% !important;
+            padding-right: 0 !important;
+            min-width: 25px !important;
+            display: block !important;
+            margin-right: auto !important;
+            margin-left: auto !important;
+            margin-top: 15px !important;
+            margin-bottom: 8px !important
+        }
+
+        *#dm *.dmBody div.u_1799660635 {
+            float: none !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            position: relative !important;
+            padding-top: 0 !important;
+            padding-left: 0 !important;
+            padding-bottom: 0 !important;
+            max-width: 100% !important;
+            padding-right: 0 !important;
+            min-width: 0 !important;
+            text-align: start !important;
+            display: block !important;
+            margin-right: auto !important;
+            margin-left: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important
+        }
+
+        *#dm *.dmBody div.u_1937650060 {
+            margin-left: 0 !important;
+            padding-top: 0 !important;
+            padding-left: 0 !important;
+            padding-bottom: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            margin-right: 0 !important;
+            padding-right: 50px !important
+        }
+
+        *#dm *.dmBody div.u_1419999847 {
+            float: none !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: calc(100% - 0px) !important;
+            position: relative !important;
+            padding-top: 56px !important;
+            padding-left: 0 !important;
+            padding-bottom: 0 !important;
+            max-width: 100% !important;
+            padding-right: 0 !important;
+            min-width: 25px !important;
+            text-align: start !important;
+            display: block !important;
+            height: auto !important;
+            margin-right: 0 !important;
+        }
+
+        *#dm *.dmBody div.u_1843301351 {
+            padding-top: 130px !important;
+            padding-left: 40px !important;
+            padding-bottom: 60px !important;
+            float: none !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: auto !important;
+            position: relative !important;
+            height: auto !important;
+            max-width: none !important;
+            min-width: 0 !important;
+            text-align: center !important;
+            background-position: 50% 50% !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            margin-left: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            margin-right: 0 !important
+        }
+    </style>
+
+    <!-- Flex Sections CSS -->
+
+
+
+
+
+    <style id="globalFontSizeStyle" type="text/css">
+        .font-size-22,
+        .size-22,
+        .size-22>font {
+            font-size: 22px !important;
+        }
+
+        .font-size-28,
+        .size-28,
+        .size-28>font {
+            font-size: 28px !important;
+        }
+
+        .font-size-18,
+        .size-18,
+        .size-18>font {
+            font-size: 18px !important;
+        }
+
+        .font-size-60,
+        .size-60,
+        .size-60>font {
+            font-size: 60px !important;
+        }
+    </style>
+    <style id="pageFontSizeStyle" type="text/css">
+    </style>
+
+
+
+
+    <style id="hideAnimFix">
+        .dmDesktopBody:not(.editGrid) [data-anim-desktop]:not([data-anim-desktop='none']),
+        .dmDesktopBody:not(.editGrid) [data-anim-extended] {
+            visibility: hidden;
+        }
+
+        .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-desktop]:not([data-anim-desktop='none']),
+        .dmDesktopBody:not(.editGrid) .dmNewParagraph[data-anim-extended] {
+            visibility: hidden !important;
+        }
+
+        #dmRoot:not(.editGrid) .flex-element [data-anim-extended] {
+            visibility: hidden;
+        }
+    </style>
+
+
+
+
+    <style id="fontFallbacks">
+        @font-face {
+            font-family: "Roboto Fallback";
+            src: local('Arial');
+            ascent-override: 92.6709%;
+            descent-override: 24.3871%;
+            size-adjust: 100.1106%;
+            line-gap-override: 0%;
+        }
+
+        @font-face {
+            font-family: "Montserrat Fallback";
+            src: local('Arial');
+            ascent-override: 84.9466%;
+            descent-override: 22.0264%;
+            size-adjust: 113.954%;
+            line-gap-override: 0%;
+        }
+
+        @font-face {
+            font-family: "Poppins Fallback";
+            src: local('Arial');
+            ascent-override: 92.326%;
+            descent-override: 30.7753%;
+            line-gap-override: 8.793%;
+            size-adjust: 113.7274%;
+        }
+
+        @font-face {
+            font-family: "Arial Fallback";
+            src: local('Arial');
+            line-gap-override: 0%;
+        }
+    </style>
+
+
+    <!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+
+    <link type="application/rss+xml" rel="alternate" href="https://www.gozen.life/feed/rss2" />
+    <link type="application/atom+xml" rel="alternate" href="https://www.gozen.life/feed/atom" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.gozen.life/resources/emf" />
+    <title>
+
+        EMF Radiation Protection South Florida | Zen Life
+
+    </title>
+    <meta name="description"
+        content="EMF Radiation Protection South Florida: Zen Life offers solutions to reduce EMF exposure from household appliances, Wi-Fi routers, and smart devices, promoting." />
+    <meta name="keywords" content=" " />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="EMF Radiation Protection South Florida | Zen Life" />
+    <meta name="twitter:description"
+        content="EMF Radiation Protection South Florida: Zen Life offers solutions to reduce EMF exposure from household appliances, Wi-Fi routers, and smart devices, promoting." />
+    <meta name="twitter:image"
+        content="https://lirp.cdn-website.com/ec518403/dms3rep/multi/opt/Zen+Life+Logo+2023+Green+Dude-1920w.png" />
+    <meta property="og:description"
+        content="EMF Radiation Protection South Florida: Zen Life offers solutions to reduce EMF exposure from household appliances, Wi-Fi routers, and smart devices, promoting." />
+    <meta property="og:title" content="EMF Radiation Protection South Florida | Zen Life" />
+    <meta property="og:image"
+        content="https://lirp.cdn-website.com/ec518403/dms3rep/multi/opt/Zen+Life+Logo+2023+Green+Dude-1920w.png" />
+
+
+
+
+    <!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot" data-page-alias="resources/emf"
+    class="dmRoot dmDesktopBody fix-mobile-scrolling addCanvasBorder dmLargeBody responsiveTablet "
+    style="padding:0;margin:0;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ========= Site Content ========= -->
+    <div id="dm" class='dmwr'>
+
+        <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+            <div dmwrapped="true" id="1901957768" class="dm-home-page" themewaschanged="true"
+                desktop-global-classes="header-over-content" tablet-global-classes="header-over-content">
+                <div dmtemplateid="Hamburger" data-responsive-name="ResponsiveDesktopTopTabletHamburger"
+                    class="runtime-module-container dm-bfs dm-layout-sec hasAnimations hasStickyHeader inMiniHeaderMode rows-1200 hamburger-reverse layout-drawer_fixed-header header-over-content dmPageBody d-page-1716942098 dmFreeHeader"
+                    id="dm-outer-wrapper" data-page-class="1716942098" data-soch="true"
+                    data-background-parallax-selector=".dmHomeSection1, .dmSectionParallex">
+                    <div id="dmStyle_outerContainer" class="dmOuter">
+                        <div id="dmStyle_innerContainer" class="dmInner">
+                            <div class="dmLayoutWrapper standard-var dmStandardDesktop">
+                                <div id="site_content">
+                                    <div class="p_hfcontainer showOnMedium">
+                                        <div id="hamburger-drawer" class="hamburger-drawer layout-drawer"
+                                            layout="e9d510f4eb904e939c2be8efaf777e6e===header" data-origin="top"
+                                            data-auto-height="true">
+                                            <div class="u_1826294544 dmRespRow" style="text-align: center;"
+                                                id="1826294544">
+                                                <div class="dmRespColsWrapper" id="1337204992">
+                                                    <div class="u_1183846399 dmRespCol small-12 medium-12 large-12 empty-column"
+                                                        id="1183846399"></div>
+                                                </div>
+                                            </div>
+                                            <div class="u_1021493186 dmRespRow middleDrawerRow"
+                                                style="text-align: center;" id="1021493186">
+                                                <div class="dmRespColsWrapper" id="1170137577">
+                                                    <div class="dmRespCol small-12 u_1808057136 medium-12 large-12"
+                                                        id="1808057136">
+                                                        <nav class="u_1144820115 effect-text-color main-navigation unifiednav dmLinksMenu"
+                                                            role="navigation" layout-main="vertical_nav_layout_1"
+                                                            layout-sub="" data-show-vertical-sub-items="HOVER"
+                                                            id="1144820115" dmle_extension="onelinksmenu"
+                                                            data-element-type="onelinksmenu"
+                                                            data-nav-structure="VERTICAL" wr="true" icon="true"
+                                                            surround="true" navigation-id="unifiedNav">
+                                                            <ul role="menubar" class="unifiednav__container  "
+                                                                data-auto="navigation-pages">
+                                                                <li role="menuitem" class=" unifiednav__item-wrap "
+                                                                    data-auto="more-pages" data-depth="0"> <a
+                                                                        href="home.html"
+                                                                        class="unifiednav__item  dmUDNavigationItem_00  "
+                                                                        target="" data-target-page-alias=""> <span
+                                                                            class="nav-item-text " data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down" data-hidden-on-mobile=""
+                                                                                data-hidden-on-desktop=""
+                                                                                data-hidden-on-tablet=""></span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li role="menuitem" class=" unifiednav__item-wrap "
+                                                                    data-auto="more-pages" data-depth="0"> <a
+                                                                        href="about.html"
+                                                                        class="unifiednav__item  dmUDNavigationItem_010101985656  "
+                                                                        target="" data-target-page-alias=""> <span
+                                                                            class="nav-item-text "
+                                                                            data-link-text="About"
+                                                                            data-auto="page-text-style">About<span
+                                                                                class="icon icon-angle-down"></span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li role="menuitem" aria-haspopup="true"
+                                                                    class=" unifiednav__item-wrap "
+                                                                    data-auto="more-pages" data-depth="0"> <a href="#"
+                                                                        class="unifiednav__item  dmUDNavigationItem_010101964446  unifiednav__item_has-sub-nav"
+                                                                        target="" data-target-page-alias=""> <span
+                                                                            class="nav-item-text "
+                                                                            data-link-text="Solutions"
+                                                                            data-auto="page-text-style">Solutions<span
+                                                                                class="icon icon-angle-down"></span>
+                                                                        </span>
+                                                                    </a>
+                                                                    <ul role="menu" aria-expanded="false"
+                                                                        class="unifiednav__container unifiednav__container_sub-nav"
+                                                                        data-depth="0" data-auto="sub-pages">
+                                                                        <li role="menuitem"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="home-security.html"
+                                                                                class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101788775  "
+                                                                                target="" data-target-page-alias=""
+                                                                                data-auto="selected-page"> <span
+                                                                                    class="nav-item-text "
+                                                                                    data-link-text="Home Security Systems"
+                                                                                    data-auto="page-text-style">Home
+                                                                                    Security Systems<span
+                                                                                        class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li role="menuitem"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="smart-home-automation.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101431922  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="Smart Home & Automation"
+                                                                                    data-auto="page-text-style">Smart
+                                                                                    Home &amp; Automation<span
+                                                                                        class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li role="menuitem"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="new-home-setup.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101731577  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="Moving + New Home Service"
+                                                                                    data-auto="page-text-style">Moving +
+                                                                                    New Home Service<span
+                                                                                        class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li role="menuitem"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="sound-systems.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101668591  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="Sound Systems"
+                                                                                    data-auto="page-text-style">Sound
+                                                                                    Systems<span
+                                                                                        class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li role="menuitem"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="custom-cabinetry.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101914362  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="Custom Cabinetry"
+                                                                                    data-auto="page-text-style">Custom
+                                                                                    Cabinetry<span
+                                                                                        class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li role="menuitem"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="tvs.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101195109  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="TVs"
+                                                                                    data-auto="page-text-style">TVs<span
+                                                                                        class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li role="menuitem"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="clean-air.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_01010137642  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="Clean Air"
+                                                                                    data-auto="page-text-style">Clean
+                                                                                    Air<span
+                                                                                        class="icon icon-angle-right"
+                                                                                        data-hidden-on-mobile=""
+                                                                                        data-hidden-on-desktop=""
+                                                                                        data-hidden-on-tablet=""></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li role="menuitem"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="clean-water.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101499365  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="Clean Water"
+                                                                                    data-auto="page-text-style">Clean
+                                                                                    Water<span
+                                                                                        class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li role="menuitem"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="zen-lifestyles.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101201786  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="Zen Lifestyles"
+                                                                                    data-auto="page-text-style">Zen
+                                                                                    Lifestyles<span
+                                                                                        class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li role="menuitem" class=" unifiednav__item-wrap "
+                                                                    data-auto="more-pages" data-depth="0"> <a
+                                                                        href="contact.html"
+                                                                        class="unifiednav__item  dmUDNavigationItem_010101803381  "
+                                                                        target="" data-target-page-alias=""> <span
+                                                                            class="nav-item-text "
+                                                                            data-link-text="Contact"
+                                                                            data-auto="page-text-style">Contact<span
+                                                                                class="icon icon-angle-down"></span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li role="menuitem" class=" unifiednav__item-wrap "
+                                                                    data-auto="more-pages" data-depth="0"> <a
+                                                                        href="address.html"
+                                                                        class="unifiednav__item  dmUDNavigationItem_010101803381  "
+                                                                        target="" data-target-page-alias="">
+                                                                        <span class="nav-item-text "
+                                                                            data-link-text="Contact"
+                                                                            data-auto="page-text-style">Address<span
+                                                                                class="icon icon-angle-down"></span>
+                                                                        </span>
+                                                                    </a>
+                                                                </li>
+                                                                <li role="menuitem" aria-haspopup="true"
+                                                                    class=" unifiednav__item-wrap "
+                                                                    data-auto="more-pages" data-depth="0"> <a href="#"
+                                                                        class="unifiednav__item  dmUDNavigationItem_010101634900  unifiednav__item_has-sub-nav"
+                                                                        target="" data-target-page-alias=""> <span
+                                                                            class="nav-item-text "
+                                                                            data-link-text="Resources"
+                                                                            data-auto="page-text-style">Resources<span
+                                                                                class="icon icon-angle-down"></span>
+                                                                        </span>
+                                                                    </a>
+                                                                    <ul role="menu" aria-expanded="false"
+                                                                        class="unifiednav__container unifiednav__container_sub-nav"
+                                                                        data-depth="0" data-auto="sub-pages">
+                                                                        <li role="menuitem"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="blog.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101755642  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="Blog"
+                                                                                    data-auto="page-text-style">Blog<span
+                                                                                        class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li role="menuitem"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="sleep.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101760953  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="Sleep"
+                                                                                    data-auto="page-text-style">Sleep<span
+                                                                                        class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li role="menuitem"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="emf.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101373760  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="EMF / WiFi"
+                                                                                    data-auto="page-text-style">EMF /
+                                                                                    WiFi<span
+                                                                                        class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li role="menuitem"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="linen.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101839220  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="Linen"
+                                                                                    data-auto="page-text-style">Linen<span
+                                                                                        class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li role="menuitem"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="1"> <a
+                                                                                href="water.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101806480  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="Water"
+                                                                                    data-auto="page-text-style">Water<span
+                                                                                        class="icon icon-angle-right"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dmRespRow u_1676049285" style="text-align: center;"
+                                                id="1676049285">
+                                                <div class="dmRespColsWrapper" id="1888750820">
+                                                    <div class="u_1916182198 dmRespCol small-12 medium-12 large-12"
+                                                        id="1916182198">
+                                                        <div class="u_1919575698 dmNewParagraph" id="1919575698"
+                                                            style="transition: none;">
+                                                            <div style=""><span style=""><span style=""><span style=""
+                                                                            class="font-size-22 lh-1"><span style=""
+                                                                                class="font-size-28 lh-1">
+                                                                                <font
+                                                                                    style="color: rgb(255, 255, 255);">
+                                                                                    <b>Get in touch</b>
+                                                                                </font>
+                                                                            </span></span>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="u_1359743311 dmNewParagraph" id="1359743311">
+                                                            <div><span style="font-size: 20px;">
+                                                                    <font style="color: rgb(255, 255, 255);"></font>
+                                                                </span></div>
+                                                            <div><span style="font-weight: 300;"
+                                                                    class="font-size-18 lh-1">
+                                                                    <font style="">
+                                                                        <div style="text-align: left;"><span
+                                                                                style="font-weight: inherit;"
+                                                                                class="lh-1 font-size-22">
+                                                                                <font
+                                                                                    style="color: rgb(163, 179, 164);">
+                                                                                    (561) 255-5788</font>
+                                                                            </span></div>
+                                                                    </font>
+                                                                </span>
+                                                            </div>
+                                                            <div><span style="font-size: 20px;">
+                                                                    <font style="color: rgb(255, 255, 255);"></font>
+                                                                </span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="layout-drawer-overlay" id="layout-drawer-overlay"></div>
+                                    </div>
+                                    <div class="site_content">
+                                        <div id="hamburger-header-container"
+                                            class="showOnMedium hamburger-header-container p_hfcontainer">
+                                            <div id="hamburger-header" class="hamburger-header p_hfcontainer"
+                                                layout="44dc38f951e9489490b055748e10ba9f===header" has-shadow="true">
+                                                <div class="u_1705692124 dmRespRow" style="text-align: center;"
+                                                    id="1705692124">
+                                                    <div class="dmRespColsWrapper" id="1469942216">
+                                                        <div class="dmRespCol small-12 u_1655486006 medium-12 large-12"
+                                                            id="1655486006">
+                                                            <div class="u_1923160809 imageWidget align-center"
+                                                                data-element-type="image" data-widget-type="image"
+                                                                id="1923160809"> <a href="/" id="1573522578"
+                                                                    file="false"><img
+                                                                        src="https://lirp.cdn-website.com/ec518403/dms3rep/multi/opt/Zen-life-logo-black-1920w-1920w.webp"
+                                                                        id="1761992403" class=""
+                                                                        data-dm-image-path="https://irp.cdn-website.com/ec518403/dms3rep/multi/Zen-life-logo-black-1920w.webp"
+                                                                        width="1000" height="159"
+                                                                        onerror="handleImageLoadError(this)" /></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="showOnMedium layout-drawer-hamburger hamburger-on-header"
+                                            id="layout-drawer-hamburger" aria-label="menu"> <span
+                                                class="hamburger__slice"></span>
+                                            <span class="hamburger__slice"></span>
+                                            <span class="hamburger__slice"></span>
+                                        </button>
+                                        <div class="dmHeaderContainer fHeader d-header-wrapper showOnLarge">
+                                            <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer"
+                                                freeheader="true"
+                                                headerlayout="b58ba5b5703b4cd7b5f5f7951565dc87===horizontal-layout-5"
+                                                data-scrollable-target="body" data-scrollable-target-threshold="1"
+                                                data-scroll-responder-id="1" preserve-sticky-header="true"
+                                                logo-size-target="83%"
+                                                layout="78f5c343822e4eb3aac27f4ad5d13812===header"
+                                                secondary-image="https://lirp.cdn-website.com/ec518403/dms3rep/multi/opt/Zen-life-logo-black-1920w-1920w.webp"
+                                                has-secondary-image="true">
+                                                <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch"
+                                                    id="1709005236">
+                                                    <div class="dmRespRow dmDefaultListContentRow u_1861705244"
+                                                        style="text-align:center" id="1861705244">
+                                                        <div class="dmRespColsWrapper" id="1914255413">
+                                                            <div class="u_1677919435 small-12 dmRespCol large-3 medium-3"
+                                                                id="1677919435">
+                                                                <div class="u_1011018909 imageWidget align-center"
+                                                                    data-widget-type="image" id="1011018909"
+                                                                    data-element-type="image"> <a href="/"
+                                                                        id="1319828216" file="false"><img
+                                                                            src="https://lirp.cdn-website.com/ec518403/dms3rep/multi/opt/Zen-Life-Logo-1920w-1920w.webp"
+                                                                            id="1456770677" class=""
+                                                                            data-dm-image-path="https://irp.cdn-website.com/ec518403/dms3rep/multi/Zen-Life-Logo-1920w.webp"
+                                                                            width="1000" height="159"
+                                                                            onerror="handleImageLoadError(this)" /></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="u_1246161842 dmRespCol small-12 large-7 medium-7"
+                                                                id="1246161842"> <span id="1630001966"></span>
+                                                                <nav class="u_1112353738 effect-float main-navigation unifiednav dmLinksMenu"
+                                                                    role="navigation"
+                                                                    layout-main="horizontal_nav_layout_2"
+                                                                    layout-sub="submenu_horizontal_2"
+                                                                    data-show-vertical-sub-items="HOVER" id="1112353738"
+                                                                    dmle_extension="onelinksmenu"
+                                                                    data-element-type="onelinksmenu" wr="true"
+                                                                    icon="true" surround="true" adwords=""
+                                                                    navigation-id="unifiedNav">
+                                                                    <ul role="menubar" class="unifiednav__container  "
+                                                                        data-auto="navigation-pages">
+                                                                        <li role="menuitem"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="home.html"
+                                                                                class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_00  "
+                                                                                target="" data-target-page-alias=""
+                                                                                data-auto="selected-page"> <span
+                                                                                    class="nav-item-text "
+                                                                                    data-link-text="
+         Home
+        " data-auto="page-text-style">Home<span class="icon icon-angle-down" data-hidden-on-mobile=""
+                                                                                        data-hidden-on-desktop=""
+                                                                                        data-hidden-on-tablet=""></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li role="menuitem"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="about.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101985656  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="About"
+                                                                                    data-auto="page-text-style">About<span
+                                                                                        class="icon icon-angle-down"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li role="menuitem" aria-haspopup="true"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="#"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101964446  unifiednav__item_has-sub-nav"
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="Solutions"
+                                                                                    data-auto="page-text-style">Solutions<span
+                                                                                        class="icon icon-angle-down"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                            <ul role="menu" aria-expanded="false"
+                                                                                class="unifiednav__container unifiednav__container_sub-nav"
+                                                                                data-depth="0" data-auto="sub-pages">
+                                                                                <li role="menuitem"
+                                                                                    class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="home-security.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101788775  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="Home Security Systems"
+                                                                                            data-auto="page-text-style">Home
+                                                                                            Security Systems<span
+                                                                                                class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li role="menuitem"
+                                                                                    class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="smart-home-automation.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101431922  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="Smart Home & Automation"
+                                                                                            data-auto="page-text-style">Smart
+                                                                                            Home &amp; Automation<span
+                                                                                                class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li role="menuitem"
+                                                                                    class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="new-home-setup.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101731577  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="Moving + New Home Service"
+                                                                                            data-auto="page-text-style">Moving
+                                                                                            + New Home Service<span
+                                                                                                class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li role="menuitem"
+                                                                                    class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="sound-systems.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101668591  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="Sound Systems"
+                                                                                            data-auto="page-text-style">Sound
+                                                                                            Systems<span
+                                                                                                class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li role="menuitem"
+                                                                                    class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="custom-cabinetry.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101914362  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="Custom Cabinetry"
+                                                                                            data-auto="page-text-style">Custom
+                                                                                            Cabinetry<span
+                                                                                                class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li role="menuitem"
+                                                                                    class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a href="tvs.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101195109  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="TVs"
+                                                                                            data-auto="page-text-style">TVs<span
+                                                                                                class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li role="menuitem"
+                                                                                    class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="clean-air.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_01010137642  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="Clean Air"
+                                                                                            data-auto="page-text-style">Clean
+                                                                                            Air<span
+                                                                                                class="icon icon-angle-right"
+                                                                                                data-hidden-on-mobile=""
+                                                                                                data-hidden-on-desktop=""
+                                                                                                data-hidden-on-tablet=""></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li role="menuitem"
+                                                                                    class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="clean-water.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101499365  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="Clean Water"
+                                                                                            data-auto="page-text-style">Clean
+                                                                                            Water<span
+                                                                                                class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li role="menuitem"
+                                                                                    class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="zen-lifestyles.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101201786  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="Zen Lifestyles"
+                                                                                            data-auto="page-text-style">Zen
+                                                                                            Lifestyles<span
+                                                                                                class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li role="menuitem"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="contact.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101803381  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="Contact"
+                                                                                    data-auto="page-text-style">Contact<span
+                                                                                        class="icon icon-angle-down"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li role="menuitem"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="address.html"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101803381  "
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="Contact"
+                                                                                    data-auto="page-text-style">Address<span
+                                                                                        class="icon icon-angle-down"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li role="menuitem" aria-haspopup="true"
+                                                                            class=" unifiednav__item-wrap "
+                                                                            data-auto="more-pages" data-depth="0"> <a
+                                                                                href="#"
+                                                                                class="unifiednav__item  dmUDNavigationItem_010101634900  unifiednav__item_has-sub-nav"
+                                                                                target="" data-target-page-alias="">
+                                                                                <span class="nav-item-text "
+                                                                                    data-link-text="Resources"
+                                                                                    data-auto="page-text-style">Resources<span
+                                                                                        class="icon icon-angle-down"></span>
+                                                                                </span>
+                                                                            </a>
+                                                                            <ul role="menu" aria-expanded="false"
+                                                                                class="unifiednav__container unifiednav__container_sub-nav"
+                                                                                data-depth="0" data-auto="sub-pages">
+                                                                                <li role="menuitem"
+                                                                                    class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a href="blog.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101755642  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="Blog"
+                                                                                            data-auto="page-text-style">Blog<span
+                                                                                                class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li role="menuitem"
+                                                                                    class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a href="sleep.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101760953  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="Sleep"
+                                                                                            data-auto="page-text-style">Sleep<span
+                                                                                                class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li role="menuitem"
+                                                                                    class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a href="emf.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101373760  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="EMF / WiFi"
+                                                                                            data-auto="page-text-style">EMF
+                                                                                            / WiFi<span
+                                                                                                class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li role="menuitem"
+                                                                                    class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a href="linen.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101839220  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="Linen"
+                                                                                            data-auto="page-text-style">Linen<span
+                                                                                                class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li role="menuitem"
+                                                                                    class=" unifiednav__item-wrap "
+                                                                                    data-auto="more-pages"
+                                                                                    data-depth="1"> <a
+                                                                                        href="/water.html"
+                                                                                        class="unifiednav__item  dmUDNavigationItem_010101806480  "
+                                                                                        target=""
+                                                                                        data-target-page-alias=""> <span
+                                                                                            class="nav-item-text "
+                                                                                            data-link-text="Water"
+                                                                                            data-auto="page-text-style">Water<span
+                                                                                                class="icon icon-angle-right"></span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </nav>
+                                                            </div>
+                                                            <div class="u_1063909542 dmRespCol small-12 large-2 medium-2"
+                                                                id="1063909542"> <a data-display-type="block"
+                                                                    class="align-center dmButtonLink dmWidget dmWwr default dmOnlyButton dmDefaultGradient u_1332816840 button_2"
+                                                                    file="false" href="home.html"
+                                                                    data-element-type="dButtonLinkId" id="1332816840"
+                                                                    data-buttonstyle="FLAT_ROUND_ICON"
+                                                                    icon-name="dm-icon-phone"> <span class="iconBg"
+                                                                        aria-hidden="true" id="1757984590"> <span
+                                                                            class="icon hasFontIconstar hasFontIcon dm-icon-phone"
+                                                                            id="1996556610"></span>
+                                                                    </span>
+                                                                    <span class="text" id="1132419454">(561)
+                                                                        255-5788</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="stickyHeaderSpacer" id="stickyHeaderSpacer" data-new="true"></div>
+                                        <div dmwrapped="true" id="dmFirstContainer"
+                                            class="dmBody u_dmStyle_template_resources/emf dm-home-page"
+                                            themewaschanged="true" desktop-global-classes="header-over-content"
+                                            tablet-global-classes="header-over-content">
+                                            <div id="allWrapper" class="allWrapper">
+                                                <!-- navigation placeholders -->
+                                                <div id="dm_content" class="dmContent">
+                                                    <div dm:templateorder="170"
+                                                        class="dmHomeRespTmpl mainBorder dmRespRowsWrapper dmFullRowRespTmpl"
+                                                        id="1716942098">
+                                                        <div class="u_1843301351 dmRespRow hasBackgroundOverlay"
+                                                            style="text-align: center;" id="1843301351">
+                                                            <div class="dmRespColsWrapper" id="1118458401">
+                                                                <div class="dmRespCol small-12 u_1491916240 medium-12 large-12"
+                                                                    id="1491916240">
+                                                                    <div class="u_1906836891 dmNewParagraph"
+                                                                        data-element-type="paragraph" data-version="5"
+                                                                        id="1906836891" style="text-align: left;">
+                                                                        <h1 class="text-align-center m-size-48 size-60">
+                                                                            <span
+                                                                                style="font-weight: bold; color: rgb(255, 255, 255); display: unset; text-shadow: rgb(0, 0, 0) 0px 0px 0.7px;"
+                                                                                class="font-size-60 m-font-size-48">EMF
+                                                                                Radiation Protection</span>
+                                                                        </h1>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dmRespRow u_1579174602" id="1579174602">
+                                                            <div class="dmRespColsWrapper" id="1194978272">
+                                                                <div class="u_1037883481 dmRespCol small-12 large-6 medium-6"
+                                                                    id="1037883481">
+                                                                    <div class="u_1207545579 dmNewParagraph"
+                                                                        data-element-type="paragraph" data-version="5"
+                                                                        id="1207545579" style="text-align: left;">
+                                                                        <h2><span style="display: unset;">The EMF Aware
+                                                                                Homeowner</span></h2>
+                                                                    </div>
+                                                                    <div class="u_1706661327 dmNewParagraph"
+                                                                        data-element-type="paragraph" data-version="5"
+                                                                        id="1706661327"
+                                                                        style="transition: none 0s ease 0s; text-align: left; display: block;">
+                                                                        <p class="m-size-16"><span
+                                                                                class="m-font-size-16"
+                                                                                m-font-size-set="true"
+                                                                                style="display: inline;">In our
+                                                                                increasingly connected world, the use of
+                                                                                electronic devices and technologies has
+                                                                                become an integral part of our daily
+                                                                                lives. While these advancements bring
+                                                                                convenience and efficiency, it's crucial
+                                                                                for homeowners to be aware of the
+                                                                                potential dangers associated with
+                                                                                Electromagnetic Fields (EMFs).
+                                                                                Understanding and mitigating these risks
+                                                                                can contribute to creating a safer and
+                                                                                healthier living environment for you and
+                                                                                your family.</span></p>
+                                                                    </div>
+                                                                    <div class="u_1673372259 dmNewParagraph"
+                                                                        data-element-type="paragraph" data-version="5"
+                                                                        id="1673372259"
+                                                                        style="transition: none 0s ease 0s; text-align: left; display: block;">
+                                                                        <p class="m-size-16"><span
+                                                                                style="font-weight: 700; display: inline;"
+                                                                                class="m-font-size-16"
+                                                                                m-font-size-set="true">What are
+                                                                                EMFs?</span></p>
+                                                                        <p class="m-size-16"><span
+                                                                                class="m-font-size-16"
+                                                                                m-font-size-set="true"
+                                                                                style="display: inline;">Electromagnetic
+                                                                                Fields (EMFs) are invisible areas of
+                                                                                energy produced by various electrical
+                                                                                and electronic devices. These fields
+                                                                                exist wherever there is electricity and
+                                                                                can be categorized into two
+                                                                                types:</span>
+                                                                            <span
+                                                                                style="display: initial;"><br /></span>
+                                                                        </p>
+                                                                        <ul class="defaultList bullet">
+                                                                            <li class="m-size-16"><span
+                                                                                    class="m-font-size-16"
+                                                                                    m-font-size-set="true"
+                                                                                    style="display: inline;">Low-Frequency
+                                                                                    EMFs: These are emitted by household
+                                                                                    appliances, power lines, electrical
+                                                                                    wiring and lighting.</span></li>
+                                                                            <li class="m-size-16"><span
+                                                                                    class="m-font-size-16"
+                                                                                    m-font-size-set="true"
+                                                                                    style="display: inline;">Radiofrequency
+                                                                                    EMFs: Generated by wireless
+                                                                                    communication devices such as cell
+                                                                                    phones, apple watch&rsquo;s,
+                                                                                    airpods, tablets, Wi-Fi routers,
+                                                                                    Bluetooth devices, smart locks and
+                                                                                    other connected smart
+                                                                                    appliances.</span></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="u_1517245529 dmNewParagraph"
+                                                                        data-element-type="paragraph" data-version="5"
+                                                                        id="1517245529"
+                                                                        style="transition: none 0s ease 0s; text-align: left; display: block;">
+                                                                        <p class="m-size-16"><span
+                                                                                class="m-font-size-16"
+                                                                                m-font-size-set="true"
+                                                                                style="display: inline; font-weight: 700;">Potential
+                                                                                Dangers of EMFs:</span></p>
+                                                                        <ul class="defaultList bullet">
+                                                                            <li class="m-size-16"><span
+                                                                                    class="m-font-size-16"
+                                                                                    m-font-size-set="true"
+                                                                                    style="display: inline;">Health
+                                                                                    Concerns: Numerous studies suggest a
+                                                                                    possible link between prolonged
+                                                                                    exposure to EMFs and various health
+                                                                                    issues, including headaches, sleep
+                                                                                    disturbances, and increased stress
+                                                                                    levels.</span></li>
+                                                                            <li class="m-size-16"><span
+                                                                                    class="m-font-size-16"
+                                                                                    m-font-size-set="true"
+                                                                                    style="display: inline;">Cancer
+                                                                                    Risk: While research is ongoing,
+                                                                                    some studies have explored potential
+                                                                                    associations between EMF exposure
+                                                                                    and certain types of cancer,
+                                                                                    particularly in cases of long-term
+                                                                                    and high-level exposure.</span></li>
+                                                                            <li class="m-size-16"><span
+                                                                                    class="m-font-size-16"
+                                                                                    m-font-size-set="true"
+                                                                                    style="display: inline;">Impact on
+                                                                                    Sleep: EMFs may interfere with the
+                                                                                    body's natural sleep patterns,
+                                                                                    leading to insomnia and disrupted
+                                                                                    sleep cycles.&nbsp;</span></li>
+                                                                            <li class="m-size-16"><span
+                                                                                    class="m-font-size-16"
+                                                                                    m-font-size-set="true"
+                                                                                    style="display: inline;">Fertility
+                                                                                    Issues: There is scientific evidence
+                                                                                    suggesting that prolonged exposure
+                                                                                    to EMFs might have adverse effects
+                                                                                    on reproductive health, impacting
+                                                                                    both male and female
+                                                                                    fertility.</span>
+                                                                                <span style="display: initial;"><span
+                                                                                        class="ql-cursor">﻿</span></span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="u_1248500289 dmNewParagraph"
+                                                                        data-element-type="paragraph" data-version="5"
+                                                                        id="1248500289"
+                                                                        style="transition: none 0s ease 0s; text-align: left; display: block;">
+                                                                        <p class="m-size-16"><span
+                                                                                class="m-font-size-16"
+                                                                                m-font-size-set="true"
+                                                                                style="display: inline; font-weight: 700;">Creating
+                                                                                an EMF-Safe Home:</span></p>
+                                                                        <ul class="defaultList bullet">
+                                                                            <li class="m-size-16"><span
+                                                                                    class="m-font-size-16"
+                                                                                    m-font-size-set="true"
+                                                                                    style="display: inline;">Identify
+                                                                                    and Limit Sources: Zen Life can
+                                                                                    conduct an audit of your home to
+                                                                                    identify major sources of EMFs and
+                                                                                    offer solutions. Consider relocating
+                                                                                    or limiting the use of devices that
+                                                                                    emit high levels of electromagnetic
+                                                                                    radiation.</span></li>
+                                                                            <li class="m-size-16"><span
+                                                                                    class="m-font-size-16"
+                                                                                    m-font-size-set="true"
+                                                                                    style="display: inline;">Maintain
+                                                                                    Safe Distances: Position electronic
+                                                                                    devices such as routers and smart
+                                                                                    meters away from frequently occupied
+                                                                                    areas. Maintaining a safe distance
+                                                                                    can reduce the intensity of EMF
+                                                                                    exposure. While speaking on your
+                                                                                    cell phone, using speaker instead of
+                                                                                    holding a radiation device up to
+                                                                                    your ear or purchasing an Airestech
+                                                                                    personal phone protection
+                                                                                    device.</span></li>
+                                                                            <li class="m-size-16"><span
+                                                                                    class="m-font-size-16"
+                                                                                    m-font-size-set="true"
+                                                                                    style="display: inline;">Create
+                                                                                    EMF-Free Zones: Designate certain
+                                                                                    areas in your home, especially
+                                                                                    bedrooms, as EMF-free zones. Keep
+                                                                                    electronic devices out of these
+                                                                                    spaces to promote a healthier sleep
+                                                                                    environment.</span></li>
+                                                                            <li class="m-size-16"><span
+                                                                                    class="m-font-size-16"
+                                                                                    m-font-size-set="true"
+                                                                                    style="display: inline;">Utilize EMF
+                                                                                    Devices: Ariestech devices diffract
+                                                                                    harmful EMF&rsquo;s to create a safe
+                                                                                    &lsquo;bubble&rsquo; to utilize our
+                                                                                    favorite electronics.</span>
+                                                                                <span style="display: initial;"><span
+                                                                                        class="ql-cursor">﻿</span></span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="u_1190025270 dmRespCol small-12 large-6 medium-6"
+                                                                    id="1190025270">
+                                                                    <div class="u_1419999847 imageWidget align-center"
+                                                                        data-element-type="image"
+                                                                        data-widget-type="image" id="1419999847"><img
+                                                                            src="https://lirp.cdn-website.com/ec518403/dms3rep/multi/opt/Untitled-design-2-1920w-1920w.webp"
+                                                                            alt="" id="1951145371" class=""
+                                                                            data-dm-image-path="https://irp.cdn-website.com/ec518403/dms3rep/multi/Untitled-design-2-1920w.webp"
+                                                                            width="1728" height="2304"
+                                                                            data-hover-effect="zoomout"
+                                                                            onerror="handleImageLoadError(this)" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dmRespRow u_1239467112" id="1239467112">
+                                                            <div class="dmRespColsWrapper" id="1711311057">
+                                                                <div class="u_1038693608 dmRespCol small-12 large-2 medium-2"
+                                                                    id="1038693608">
+                                                                    <div data-element-type="spacer"
+                                                                        class="u_1022977581 dmSpacer hide-for-small"
+                                                                        id="1022977581"></div>
+                                                                </div>
+                                                                <div class="u_1644087071 dmRespCol small-12 large-14 medium-14"
+                                                                    id="1644087071">
+                                                                    <div data-element-type="dYouTubeId"
+                                                                        class="u_1197620880 youtubeExt dmNoMark youtube-padding-fix"
+                                                                        id="1197620880">
+                                                                        <div class="innerYoutubeExt" id="1609896474">
+                                                                            <iframe id="1832285387"
+                                                                                src="https://www.youtube.com/embed/wEj4rrqjkkY"
+                                                                                frameborder="0"
+                                                                                allowfullscreen=""></iframe>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="u_1103037703 dmRespCol small-12 large-2 medium-2"
+                                                                    id="1103037703">
+                                                                    <div data-element-type="spacer"
+                                                                        class="u_1847307552 dmSpacer hide-for-small"
+                                                                        id="1847307552"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dmRespRow u_1383575201" id="1383575201">
+                                                            <div class="dmRespColsWrapper" id="1995242867">
+                                                                <div class="u_1937650060 dmRespCol small-12 large-6 medium-6"
+                                                                    id="1937650060">
+                                                                    <div class="u_1799660635 imageWidget align-center"
+                                                                        data-element-type="image"
+                                                                        data-widget-type="image" id="1799660635"><img
+                                                                            src="https://lirp.cdn-website.com/ec518403/dms3rep/multi/opt/Screen-Shot-2024-01-03-at-1.44.17-PM-1920w-1920w.webp"
+                                                                            alt="" id="1554820931" class=""
+                                                                            data-dm-image-path="https://irp.cdn-website.com/ec518403/dms3rep/multi/Screen-Shot-2024-01-03-at-1.44.17-PM-1920w.webp"
+                                                                            width="1176" height="1480"
+                                                                            data-hover-effect="zoomout"
+                                                                            onerror="handleImageLoadError(this)" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="u_1071789364 dmRespCol small-12 large-6 medium-6"
+                                                                    id="1071789364">
+                                                                    <div class="u_1599751933 dmNewParagraph"
+                                                                        data-element-type="paragraph" data-version="5"
+                                                                        id="1599751933"
+                                                                        style="transition: none 0s ease 0s; text-align: left; display: block;">
+                                                                        <p class="m-size-16"><span
+                                                                                style="display: initial; font-weight: 700;"
+                                                                                class="m-font-size-16"
+                                                                                m-font-size-set="true">We are
+                                                                                connected.</span></p>
+                                                                        <p class="m-size-16"><span
+                                                                                class="m-font-size-16"
+                                                                                m-font-size-set="true"
+                                                                                style="display: initial;">Our homes and
+                                                                                the technology we use daily are more
+                                                                                connected than ever before and this
+                                                                                invisible interconnected world we live
+                                                                                in continues to expand each year. WiFi
+                                                                                has become an essential component of
+                                                                                modern living. While this wireless
+                                                                                technology provides convenience and
+                                                                                connectivity, it's crucial for
+                                                                                homeowners to be informed about the
+                                                                                potential dangers associated with
+                                                                                Electromagnetic Fields (EMFs) generated
+                                                                                by WiFi devices.</span></p>
+                                                                        <p><span style="display: initial;"><br /></span>
+                                                                        </p>
+                                                                        <p class="m-size-16"><span
+                                                                                class="m-font-size-16"
+                                                                                m-font-size-set="true"
+                                                                                style="display: initial;">Understanding
+                                                                                these risks empowers you to take steps
+                                                                                towards creating a home environment that
+                                                                                balances technological convenience with
+                                                                                your family's health.</span></p>
+                                                                        <p><span style="display: initial;"><br /></span>
+                                                                        </p>
+                                                                        <p class="m-size-16"><span
+                                                                                style="display: initial; font-weight: 700;"
+                                                                                class="m-font-size-16"
+                                                                                m-font-size-set="true">Unraveling the
+                                                                                WiFi-EMF Connection:</span></p>
+                                                                        <p class="m-size-16"><span
+                                                                                class="m-font-size-16"
+                                                                                m-font-size-set="true"
+                                                                                style="display: initial;">WiFi, or
+                                                                                Wireless Fidelity, relies on
+                                                                                radiofrequency EMFs to transmit data
+                                                                                wirelessly. Devices such as routers,
+                                                                                smart TVs, and smart home systems emit
+                                                                                these radiofrequency EMFs, creating an
+                                                                                invisible web of connectivity within our
+                                                                                homes. However, prolonged exposure to
+                                                                                high levels of radiofrequency EMFs has
+                                                                                raised concerns about potential health
+                                                                                risks.</span></p>
+                                                                        <p><span style="display: initial;"><br /></span>
+                                                                        </p>
+                                                                        <p class="m-size-16"><span
+                                                                                class="m-font-size-16"
+                                                                                m-font-size-set="true"
+                                                                                style="display: initial;">Pro Zen Tech
+                                                                                Tip: Here&rsquo;s a simple, cost
+                                                                                effective solution to mitigate WiFi /
+                                                                                EMF exposure.&nbsp;</span>
+                                                                            <span single-space="true"
+                                                                                class="m-font-size-16"
+                                                                                style="display: initial;"> <span
+                                                                                    class="m-font-size-16"
+                                                                                    style="display: initial;"></span>
+                                                                            </span>
+                                                                        </p>
+                                                                        <ul class="defaultList bullet">
+                                                                            <li class="m-size-16"><span
+                                                                                    class="m-font-size-16"
+                                                                                    m-font-size-set="true"
+                                                                                    style="display: initial;">Purchase a
+                                                                                    simple lamp timer on Amazon. This
+                                                                                    enables you to turn the WiFi off at
+                                                                                    night.&nbsp;</span></li>
+                                                                            <li class="m-size-16"><span
+                                                                                    class="m-font-size-16"
+                                                                                    m-font-size-set="true"
+                                                                                    style="display: initial;">Set the
+                                                                                    lamp timer adjustments to turn off
+                                                                                    just after you go to sleep at night
+                                                                                    and to turn on just before you wake
+                                                                                    up in the morning.</span></li>
+                                                                            <li class="m-size-16"><span
+                                                                                    class="m-font-size-16"
+                                                                                    m-font-size-set="true"
+                                                                                    style="display: initial;">Plug your
+                                                                                    WiFi equipment into the lamp timer
+                                                                                    and you&rsquo;re all set.</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <p><span style="display: initial;"><br /></span>
+                                                                        </p>
+                                                                        <p class="m-size-16"><span
+                                                                                class="m-font-size-16"
+                                                                                m-font-size-set="true"
+                                                                                style="display: initial;">We&rsquo;ve
+                                                                                found a simple lamp timer works best and
+                                                                                is cost effective under $15. Smart plugs
+                                                                                rely on the internet so if the plug
+                                                                                turns off there&rsquo;s no internet to
+                                                                                turn it back on.</span></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dmFooterContainer">
+                                            <div id="fcontainer"
+                                                class="u_fcontainer f_hcontainer dmFooter p_hfcontainer">
+                                                <div dm:templateorder="250" class="dmFooterResp generalFooter"
+                                                    id="1943048428">
+                                                    <div class="dmRespRow u_1661225099 contact-form" id="1661225099">
+                                                        <div class="dmRespColsWrapper" id="1167147241">
+                                                            <div class="dmRespCol small-12 large-6 medium-6 u_1601918351"
+                                                                id="1601918351">
+                                                                <div class="u_1991340153 dmNewParagraph"
+                                                                    data-element-type="paragraph" data-version="5"
+                                                                    id="1991340153"
+                                                                    style="transition: none 0s ease 0s; text-align: left; display: block;">
+                                                                    <h2 class="text-align-center m-size-48 size-60">
+                                                                        <span style="display: unset; font-weight: bold;"
+                                                                            class="font-size-60 m-font-size-48">Contact
+                                                                            Us</span>
+                                                                    </h2>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dmRespCol large-6 medium-6 small-12 u_1717099382"
+                                                                id="1717099382">
+                                                                <div class="u_1548021632 dmform default native-inputs"
+                                                                    data-element-type="dContactUsRespId" captcha="true"
+                                                                    data-require-captcha="true"
+                                                                    data-captcha-position="bottomleft" id="1548021632">
+                                                                    <h3 class="dmform-title dmwidget-title"
+                                                                        id="1172341888" hide="true">Contact Us</h3>
+                                                                    <div class="dmform-wrapper" id="1867877254"
+                                                                        captcha-lang="en">
+                                                                        <form method="post" class="dmRespDesignRow"
+                                                                            locale="ENGLISH" id="1690048387">
+                                                                            <div class="dmforminput required  small-12 dmRespDesignCol medium-12 large-12"
+                                                                                id="1545673218"> <label for="1108619970"
+                                                                                    id="1536145568"
+                                                                                    data-dm-for="dmform-0">Name*</label>
+                                                                                <input type="text" class=""
+                                                                                    name="dmform-0"
+                                                                                    id="1108619970" /><input
+                                                                                    type="hidden" name="label-dmform-0"
+                                                                                    value="Name*" id="1884635867"
+                                                                                    class="" />
+                                                                            </div>
+                                                                            <div class="dmforminput required  small-12 dmRespDesignCol medium-12 large-12"
+                                                                                id="1403850656"> <label for="1156411754"
+                                                                                    id="1121518878"
+                                                                                    data-dm-for="dmform-1">Email*</label>
+                                                                                <input type="email" class=""
+                                                                                    name="dmform-1"
+                                                                                    id="1156411754" /><input
+                                                                                    type="hidden" name="label-dmform-1"
+                                                                                    value="Email*" id="1543552894"
+                                                                                    class="" />
+                                                                            </div>
+                                                                            <div class="dmforminput required  small-12 dmRespDesignCol medium-12 large-12"
+                                                                                id="1249567074"> <label for="1272518430"
+                                                                                    id="1344744293"
+                                                                                    data-dm-for="dmform-2">Phone*</label>
+                                                                                <input type="tel" class=""
+                                                                                    name="dmform-2"
+                                                                                    id="1272518430" /><input
+                                                                                    type="hidden" name="label-dmform-2"
+                                                                                    value="Phone*" id="1624351187"
+                                                                                    class="" />
+                                                                            </div>
+                                                                            <div class="dmforminput large-12 medium-12 dmRespDesignCol"
+                                                                                id="1251856779"> <label for="1035262137"
+                                                                                    id="1585396424"
+                                                                                    data-dm-for="dmform-3">Message</label>
+                                                                                <textarea name="dmform-3"
+                                                                                    id="1035262137"></textarea>
+                                                                                <input type="hidden"
+                                                                                    name="label-dmform-3"
+                                                                                    value="Message" id="1407503576"
+                                                                                    class="" />
+                                                                            </div>
+                                                                            <span id="undefined_clear"
+                                                                                class="dmWidgetClear"></span>
+                                                                            <div class="dmformsubmit dmWidget R"
+                                                                                id="1489403660"><input class=""
+                                                                                    name="submit" type="submit"
+                                                                                    value="Send Message"
+                                                                                    id="1377655803" /></div>
+                                                                            <input name="dmformsendto" type="hidden"
+                                                                                value="O0wrseIfFLuQyYuVthFsoqjbcc88qQ8RKHQgF7sPyVssJzxrQ+O+iAMQkJKWsy8Erm1NIN4wK2pkqKI63bheYQ=="
+                                                                                id="1150278232" data-dec="true" /><input
+                                                                                class="dmActionInput" type="hidden"
+                                                                                name="action"
+                                                                                value="/_dm/s/rt/widgets/dmform.submit.jsp"
+                                                                                id="1188237223" /><input
+                                                                                name="dmformsubject" type="hidden"
+                                                                                value="" id="1996441887" /><input
+                                                                                name="dmformfrom" type="hidden" value=""
+                                                                                id="1444356694" /><input
+                                                                                name="dmformautoreplyenabled"
+                                                                                type="hidden" value="true"
+                                                                                id="1003528707" /><input
+                                                                                name="dmformautoreplyfrom" type="hidden"
+                                                                                value="form-processor"
+                                                                                id="1310825085" /><input
+                                                                                name="dmformautoreplysubject"
+                                                                                type="hidden"
+                                                                                value="Thank you for your submission"
+                                                                                id="1400335106" /><input
+                                                                                name="dmformautoreplymsg" type="hidden"
+                                                                                value="V2UndmUgcmVjZWl2ZWQgeW91ciBtZXNzYWdlIC0gdGhhbmsgeW91LiBPbmUgb2Ygb3VyIHRlYW0gbWVtYmVycyB3aWxsIGdldCBiYWNrIHRvIHlvdSBzb29uLg=="
+                                                                                id="1593629682" /><input
+                                                                                name="dmformautoreplyincludeformcopy"
+                                                                                type="hidden" value="true"
+                                                                                id="1908549609" /><input
+                                                                                name="dmformsubmitparams" type="hidden"
+                                                                                value="8mpKnCSiNQXK/d9M7IDrS6fTKG1wJZxMJmqy+zift1hCXRcPvqcTCFW6X+ak5JmFE1UB7Gx8A1muGlTalhYUFzVHZQziAq5frz90/AiWb35ANG0Or/4E3TvpO/vXfipTPjEt2GCsH/5VSLsIUK/Uzny1r01ltPg27Jvwuc7xgYQ0bg9P0qcHxshrztrLs0q7T0fgdrM+DuJPxLVaAgyFxxx31LEaDx3mAqspRRWkiU6lC30J5RIjXVtA2gBdgzCNyNz9XCxEKeoL5h0gwP08fgGHLjjzexOS3HA3cY08BS0B7H15UR8DMza2uwBDsLonMtx3E3/gWz0G6a3uPRVcXcyUtZ5xFO4C9nUCrQEbkWbrn0VoEZmO3CDI0EYOU4PLE4NOScWtGcPMXO4Vy0NHtpaJCjRVQCgSrhpU2pYWFBfxmyHYVBsTHxkT4eRvyZoDW3DFc9m/ycMHwkP6o+SaUKuVfRAFKg6DI/WcTry9sHKLi1g4PDReD44C0SG0zkVHQ6PdbGkIDAmVgsyPiccSeQ=="
+                                                                                data-dec="true" /><input type="hidden"
+                                                                                name="page_uuid"
+                                                                                value="d0a989012cd248b6b9ddf3cf9602d73d" />
+                                                                        </form>
+                                                                    </div>
+                                                                    <div class="dmform-success" style="display:none"
+                                                                        id="1101874154">Thank you for contacting us.<br
+                                                                            id="1808606724" />We will get back to you as
+                                                                        soon as possible.</div>
+                                                                    <div class="dmform-error" style="display:none"
+                                                                        id="1197164418">Oops, there was an error sending
+                                                                        your message.<br id="1913785002" />Please try
+                                                                        again later.</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dmRespRow u_1632155419 last-section"
+                                                        style="text-align: center;" id="1632155419">
+                                                        <div class="dmRespColsWrapper" id="1253858808">
+                                                            <div class="u_1063824722 dmRespCol small-12 large-6 medium-6"
+                                                                id="1063824722">
+                                                                <div class="u_1846129194 imageWidget align-center"
+                                                                    data-element-type="image" data-widget-type="image"
+                                                                    id="1846129194"><img
+                                                                        src="https://lirp.cdn-website.com/ec518403/dms3rep/multi/opt/zen-life-shadow-373w-1920w.webp"
+                                                                        alt="" id="1736163841" class=""
+                                                                        data-dm-image-path="https://irp.cdn-website.com/ec518403/dms3rep/multi/zen-life-shadow-373w.webp"
+                                                                        width="370" height="318"
+                                                                        onerror="handleImageLoadError(this)" /></div>
+                                                            </div>
+                                                            <div class="dmRespCol large-6 medium-6 small-12"
+                                                                id="1872475773">
+                                                                <div class="u_1022280272 dmNewParagraph"
+                                                                    data-element-type="paragraph" data-version="5"
+                                                                    id="1022280272"
+                                                                    style="transition: none 0s ease 0s; text-align: left; display: block;">
+                                                                    <h5 class="text-align-center size-22 m-size-22">
+                                                                        <span
+                                                                            style="display: unset; color: rgb(0, 0, 0);"
+                                                                            class="font-size-22 m-font-size-22"
+                                                                            m-font-size-set="true">Call Today</span>
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="u_1209643553 dmNewParagraph"
+                                                                    data-element-type="paragraph" data-version="5"
+                                                                    id="1209643553"
+                                                                    style="transition: none 0s ease 0s; text-align: left; display: block;">
+                                                                    <p class="size-18 m-size-18 text-align-center"><a
+                                                                            href="tel:(561) 255-5788" target="_blank"
+                                                                            type="call"
+                                                                            style="color:rgb(0, 0, 0);font-weight:normal;display:unset;text-decoration:none;font-family:Arial, 'Arial Fallback';"
+                                                                            class="m-font-size-18 font-size-18"
+                                                                            m-font-size-set="true">(561) 255-5788</a>
+                                                                    </p>
+                                                                    <p class="text-align-center"><span
+                                                                            style="display: initial;">Address: 330 Olivewood
+                                                                            Place #0117 Boca Raton, FL 33431</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="1236746004" dmle_extension="powered_by"
+                                                    data-element-type="powered_by" icon="true" surround="false"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--  Add full CSS and Javascript before the close tag of the body if needed -->
+    <!-- ========= JS Section ========= -->
+    <script>
+        var isWLR = false;
+
+        window.customWidgetsFunctions = {};
+        window.customWidgetsStrings = {};
+        window.collections = {};
+        window.currentLanguage = "ENGLISH"
+        window.isSitePreview = false;
+    </script>
+    <script type="text/javascript">
+        var d_version = "production_5270";
+        var build = "2025-03-11T13_53_18";
+        window['v' + 'ersion'] = d_version;
+
+        function buildEditorParent() {
+            window.isMultiScreen = true;
+            window.editorParent = {};
+            window.previewParent = {};
+            window.assetsCacheQueryParam = "?version=2025-03-11T13_53_18";
+            try {
+                var _p = window.parent;
+                if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                    window.editorParent = _p;
+                } else if (_p.isSitePreview) {
+                    window.previewParent = _p;
+                }
+            } catch (e) {
+
+            }
+        }
+
+        buildEditorParent();
+    </script>
+
+    <!-- Load jQuery -->
+    <script type="text/javascript" id='d-js-jquery'
+        src="https://static.cdn-website.com/libs/jquery/jquery-3.7.0.min.js"></script>
+    <!-- End Load jQuery -->
+    <!-- Injecting site-wide before scripts -->
+    <!-- End Injecting site-wide to the head -->
+
+
+    <script>
+        var _jquery = window.$;
+
+        var jqueryAliases = ['$', 'jquery', 'jQuery'];
+
+        jqueryAliases.forEach((alias) => {
+            Object.defineProperty(window, alias, {
+                get() {
+                    return _jquery;
+                },
+                set() {
+                    console.warn("Trying to over-write the global jquery object!");
+                }
+            });
+        });
+        window.jQuery.migrateMute = true;
+    </script>
+    <script>
+        window.cookiesNotificationMarkupPreview = 'null';
+    </script>
+
+    <!-- HEAD RT JS Include -->
+    <script id='d-js-params'>
+        window.INSITE = window.INSITE || {};
+        window.INSITE.device = "desktop";
+
+        window.rtCommonProps = {};
+        rtCommonProps["rt.ajax.ajaxScriptsFix"] = true;
+        rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+        rtCommonProps["runtimecollector.url"] = 'https://rtc.multiscreensite.com';
+        rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+        rtCommonProps["inlineEditGrid.snap"] = true;
+        rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+        rtCommonProps["rt.pushnotifs.force.button"] = true;
+        rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+        rtCommonProps["common.mapbox.js.override"] = false;
+        rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+        rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+        rtCommonProps["isCoverage.test"] = false;
+        rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+        rtCommonProps["feature.flag.mappy.kml"] = false;
+        rtCommonProps["common.resources.dist.cdn"] = true;
+        rtCommonProps["common.build.dist.folder"] = 'production/5270';
+        rtCommonProps["common.resources.cdn.host"] = 'https://static.cdn-website.com';
+        rtCommonProps["common.resources.folder"] = 'https://static.cdn-website.com/mnlt/production/5270';
+        rtCommonProps["feature.flag.runtime.backgroundSlider.preload.slowly"] = true;
+        rtCommonProps["feature.flag.runtime.newAnimation.enabled"] = true;
+        rtCommonProps["feature.flag.runtime.newAnimation.respectCssAnimationProps.enabled"] = true;
+        rtCommonProps["feature.flag.runtime.newAnimation.jitAnimation.enabled"] = true;
+        rtCommonProps["feature.flag.sites.google.analytics.gtag"] = true;
+        rtCommonProps["feature.flag.runOnReadyNewTask"] = true;
+        rtCommonProps["isAutomation.test"] = false;
+
+
+        rtCommonProps['common.mapsProvider'] = 'mapbox';
+
+        rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+        rtCommonProps['common.geocodeProvider'] = 'mapbox';
+        rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+        rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+        rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+        rtCommonProps['common.map.defaults.strokeSize'] = '2';
+        rtCommonProps['server.for.resources'] = '';
+        rtCommonProps['feature.flag.lazy.widgets'] = true;
+        rtCommonProps['feature.flag.single.wow'] = false;
+        rtCommonProps['feature.flag.disallowPopupsInEditor'] = true;
+        rtCommonProps['feature.flag.mark.anchors'] = true;
+        rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+        rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+        rtCommonProps["images.sizes.small"] = 160;
+        rtCommonProps["images.sizes.mobile"] = 640;
+        rtCommonProps["images.sizes.tablet"] = 1280;
+        rtCommonProps["images.sizes.desktop"] = 1920;
+        rtCommonProps["modules.resources.cdn"] = true;
+        rtCommonProps["import.images.storage.imageCDN"] = 'https://lirp.cdn-website.com/';
+        rtCommonProps["feature.flag.runtime.inp.threshold"] = 150;
+        rtCommonProps["feature.flag.performance.logs"] = true;
+        rtCommonProps["site.widget.form.captcha.type"] = 'g_recaptcha';
+        rtCommonProps["friendly.captcha.site.key"] = 'FCMGSQG9GVNMFS8K';
+        rtCommonProps["cookiebot.mapbox.consent.category"] = 'marketing';
+        rtCommonProps["platform.monolith.personalization.dateTimeCondition.popupMsgAction.moveToclient.enabled"] = true;
+
+        // feature flags that's used out of runtime module (in  legacy files)
+        rtCommonProps["site.runtime.video.background.ssr"] = true;
+
+        window.rtFlags = {};
+        rtFlags["unsuspendEcwidStoreOnRuntime.enabled"] = true;
+        rtFlags["scripts.widgetCount.enabled"] = true;
+        rtFlags["ecom.ecwidNewUrlStructure.enabled"] = false;
+        rtFlags["ecom.ecwid.storefrontV3.enabled"] = false;
+        rtFlags["ecom.ecwid.old.store.fix.facebook.share"] = true;
+        rtFlags["feature.flag.photo.gallery.exact.size"] = true;
+        rtFlags["facebook.runtime.widgets.upgrade"] = true;
+        rtFlags["geocode.search.localize"] = false;
+        rtFlags["feature.flag.runtime.newAnimation.asyncInit.setTimeout.enabled"] = false;
+        rtFlags["site.contact.form.fix.for.attribute"] = true;
+        rtFlags["contact.form.date.format.enabled"] = true;
+        rtFlags["twitter.heightLimit.enabled"] = true;
+        rtFlags["runtime.load.script.native"] = true;
+        rtFlags["editor.classicHybrid.photogallery.fix"] = true;
+        rtFlags["runtime.lottieOverflow"] = false;
+        rtFlags["runtime.monitoring.sentry.ignoreErrors"] = "";
+        rtFlags["contact.form.browserValidation.enabled"] = true;
+        rtFlags["feature.flag.notifications.push.from.top"] = true;
+        rtFlags["streamline.monolith.personalization.supportMultipleConditions.enabled"] = false;
+        rtFlags["runtime.cwv.report.cls.enabled"] = true;
+        rtFlags["flex.runtime.popup.with.show"] = true;
+        rtFlags["contact.form.useActiveForm"] = true;
+    </script>
+    <script
+        src="https://static.cdn-website.com/mnlt/production/5270/_dm/s/rt/dist/scripts/d-js-one-runtime-unified-desktop.min.js"
+        id="d-js-core"></script>
+    <!-- End of HEAD RT JS Include -->
+    <script
+        src="https://static.cdn-website.com/mnlt/production/5270/_dm/s/rt/dist/scripts/d-js-jquery-migrate.min.js"></script>
+    <script>
+        $(window).bind("orientationchange", function (e) {
+            $.layoutManager.initLayout();
+
+        });
+        $(document).resize(function () {
+
+        });
+    </script>
+    <script type="text/javascript" id="d_track_campaign">
+        (function () {
+            if (!window.location.search) {
+                return;
+            }
+            const cleanParams = window.location.search.substring(1); // Strip ?
+            const queryParams = cleanParams.split('&');
+
+            const expires = 'expires=' + new Date().getTime() + 24 * 60 * 60 * 1000;
+            const domain = 'domain=' + window.location.hostname;
+            const path = "path=/";
+
+            queryParams.forEach((param) => {
+                const [key, value = ''] = param.split('=');
+                if (key.startsWith('utm_')) {
+                    const cookieName = "_dm_rt_" + key.substring(4);
+                    const cookie = cookieName + "=" + value;
+                    const joined = [cookie, expires, domain, path].join(";");
+                    document.cookie = joined;
+                }
+            });
+        }());
+    </script>
+    <script type="text/javascript">
+        var _dm_gaq = {};
+        var _gaq = _gaq || [];
+        var _dm_insite = [];
+    </script>
+
+    <script type="text/javascript" id="d_track_sp">
+        ;
+        (function (p, l, o, w, i, n, g) {
+            if (!p[i]) {
+                p.GlobalSnowplowNamespace = p.GlobalSnowplowNamespace || [];
+                p.GlobalSnowplowNamespace.push(i);
+                p[i] = function () {
+                    (p[i].q = p[i].q || []).push(arguments)
+                };
+                p[i].q = p[i].q || [];
+                n = l.createElement(o);
+                g = l.getElementsByTagName(o)[0];
+                n.async = 1;
+                n.src = w;
+                g.parentNode.insertBefore(n, g)
+            }
+        }(window, document, "script", "//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js", "snowplow"));
+        window.dmsnowplow = window.snowplow;
+
+        dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+            appId: 'ec518403'
+        });
+
+        // snowplow queries element styles so we wait until CSS calculations are done.
+        requestAnimationFrame(() => {
+            dmsnowplow('trackPageView');
+            _dm_insite.forEach((rule) => {
+                // Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+                // the tracking is in popup.js
+                if (rule.actionName !== "popup") {
+                    dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+                }
+                window ? .waitForDeferred ? .('dmAjax', () => {
+                    $.DM.events.trigger('event-ruleTriggered', {
+                        value: rule
+                    });
+                });
+            });
+        });
+    </script>
+    <div style="display:none;" id="P6iryBW0Wu"></div>
+
+    <!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div id="fb-root" data-locale="en"></div>
+    <!-- Alias: ec518403 -->
+    <div class="dmPopupMask" id="dmPopupMask"></div>
+    <div id="dmPopup" class="dmPopup">
+        <div class="dmPopupCloseWrapper">
+            <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div>
+        </div>
+        <div class="dmPopupTitle"> <span></span> Share by:</div>
+        <div class="data"></div>
+    </div>
+    <script id="d_track_personalization">
+        window ? .waitForDeferred ? .('dmAjax', () => {
+            // Collects client data and updates cookies used by smart sites
+            window.expireDays = 365;
+            window.visitLength = 30 * 60000;
+            $.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), window.expireDays);
+            setSmartSiteCookiesInternal("dm_this_page_view", "dm_last_page_view", "dm_total_visits", "dm_last_visit");
+        });
+    </script>
+    <script type="text/javascript">
+        Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+
+        Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+        Parameters.HomeLinkText = 'Home';
+    </script>
+    <!--  End Script tags -->
+    <!--  Site Wide Html Markup -->
+    <!--  Site Wide Html Markup -->
+</body>
+
+</html>
